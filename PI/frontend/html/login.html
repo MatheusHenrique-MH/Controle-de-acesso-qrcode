@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+    <div class="login-container" id="form-container">
+        <h2 id="form-title">Login</h2>
+        <input id="nome" placeholder="Nome" style="display: none;"><br>
+        <input id="email" placeholder="Email"><br>
+        <input id="senha" type="password" placeholder="Senha"><br>
+
+        <button id="actionButton" onclick="executarAcao()">Entrar</button>
+        <p id="alternarTexto">
+            Não tem uma conta? <a href="#" onclick="alternarFormulario()">Cadastre-se</a>
+        </p>
+        <div id="loginStatus"></div>
+    </div>
+</body>
+</html>
